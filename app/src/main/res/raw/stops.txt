@@ -1,0 +1,5 @@
+StopName,DistanceKM,TimeMinutes,TransitVisaRequired
+Stop A,200,30,Yes
+Stop B,350,60,No
+Stop C,400,80,Yes
+Stop D,600,120,No

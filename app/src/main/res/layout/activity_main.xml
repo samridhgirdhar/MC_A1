@@ -1,0 +1,59 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+
+    <!-- RecyclerView for stops (if more than 3, acts like lazy; if 3 or fewer, it's still okay) -->
+    <!-- TextView for overall distance/time progress -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Journey Information"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:padding="8dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStops"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Toggle for Kilometers / Miles -->
+    <Button
+        android:id="@+id/btnToggleUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch to Miles" />
+
+    <!-- Next Stop Button -->
+    <Button
+        android:id="@+id/btnNextStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arrived at Next Stop" />
+
+    <!-- TextView for overall distance/time progress -->
+    <TextView
+        android:id="@+id/tvProgressInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance Covered: 0 km | Time Covered: 0 min" />
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0" />
+
+</LinearLayout>
