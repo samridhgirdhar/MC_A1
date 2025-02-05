@@ -1,0 +1,5 @@
+New York,Transit Visa,1500,3
+Paris,No Visa Required,500,1
+Dubai,Transit Visa,3000,5
+Mumbai,No Visa Required,2500,4
+Sydney,No Visa Required,1200,2
