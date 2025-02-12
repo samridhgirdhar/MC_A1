@@ -1,4 +1,4 @@
-My Flight Tracker  – XML & Compose
+# My Flight Tracker  – XML & Compose
 The Journey App simulates a multi-stop journey, displaying distances, time, visa requirements, and progress. It exists in two versions:
 XML Version: Uses Kotlin + XML (RecyclerView, TextViews).
 Jetpack Compose Version: Uses Kotlin + Compose (LazyColumn, Text, etc.).
@@ -13,7 +13,7 @@ Sydney,false,12000,1600
 
 Both versions read this file to populate the list of stops.
 
-2. XML Version (Traditional UI)
+# 2. XML Version (Traditional UI)
 Languages & Frameworks: Kotlin + XML + RecyclerView.
 A. Activity & Layout
 activity_main.xml:
@@ -31,7 +31,7 @@ Progress Bar: Shows percentage of distance covered (distanceCoveredKm / totalDis
 C. StopsAdapter.kt
 Binds each stop’s name, visa requirement, and distance (converted if needed) to built-in simple layouts.
 
-3. Jetpack Compose Version
+# 3. Jetpack Compose Version
 Languages & Frameworks: Kotlin + Jetpack Compose.
 A. MainActivity.kt
 Same data reading logic from stops.txt.
@@ -48,7 +48,7 @@ Another button increments currentStopIndex and updates distanceCoveredKm & timeS
 StopText / StopItem:
 Display a single stop’s data (converted distance, time, etc.).
 
-4. Key Features in Both Versions
+# 4. Key Features in Both Versions
 Distance Toggle: Switch km ↔ miles via a button.
 Next Stop Button: Moves to the next stop, updates distance/time covered.
 Progress Bar / Indicator: Shows how much of the journey is completed.
@@ -57,7 +57,7 @@ XML: RecyclerView for >3 stops, TextViews if ≤3.
 Compose: LazyColumn for >3 stops, Column + Text if ≤3.
 Data from stops.txt: Each stop’s name, visa, distance, and time is parsed.
 
-5. Running the App
+# 5. Running the App
 Load in Android Studio:
 Open either JourneyXMLApp or JourneyComposeApp project.
 Build & Run:
@@ -68,7 +68,7 @@ Build > Build APK(s).
 Find in app/build/outputs/apk/debug/app-debug.apk.
 Transfer/install on a real device.
 
-6. Repository & Branches
+# 6. Repository & Branches
 xml-version branch: Contains the XML version code.
 compose-version branch: Contains the Compose version code.
 # Switch to XML version
@@ -78,10 +78,3 @@ git checkout xml-version
 git checkout compose-version
 Submission: Provide both branches in a private GitHub repo, plus a README & the APK files.
 
-✅ Done!
-This README explains how both XML and Compose versions are implemented, covering:
-Data handling (stops.txt)
-UI layout logic (traditional vs. lazy)
-Distance/time toggles
-Basic instructions to run on an emulator or device
-You have a complete multi-stop journey app in two different UI frameworks. Enjoy!
